@@ -1,1 +1,1 @@
-This is a repo dedicated to coursework I did while learning Node.js.
+This is a repo dedicated to coursework I've done while learning Node.js.
