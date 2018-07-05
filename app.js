@@ -27,12 +27,12 @@ if (command === 'add') {
 const user = {
   name: 'Max',
   sayHi: () => {
-    console.log('arguments', arguments);
-    console.log(`Hi. I'm ${this.name}`);
+    // console.log('arguments', arguments);
+    // console.log(`Hi. I'm ${this.name}`);
   },
   sayHiAlt () {
-    console.log(arguments);
-    console.log(`Hi. I'm ${this.name}`);
+    // console.log(arguments);
+    // console.log(`Hi. I'm ${this.name}`);
   }
 }
 
