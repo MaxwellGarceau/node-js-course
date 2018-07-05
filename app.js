@@ -13,7 +13,12 @@ console.log('Process.argv', process.argv);
 console.log('Yargs.argv', argv);
 
 if (command === 'add') {
-  notes.addNote(argv.title, argv.body);
+  const note = notes.addNote(argv.title, argv.body);
+  if (note) {
+    console.log('note created:', `Title: ${note.title}`, `Body: ${note.body}`);
+  } else {
+    console.log('duplicate note');
+  }
 } else if (command === 'list') {
     notes.getAll();
 } else if (command === 'read') {
