@@ -23,3 +23,17 @@ if (command === 'add') {
 } else {
     console.log('Command not recognized');
 }
+
+const user = {
+  name: 'Max',
+  sayHi: () => {
+    console.log('arguments', arguments);
+    console.log(`Hi. I'm ${this.name}`);
+  },
+  sayHiAlt () {
+    console.log(arguments);
+    console.log(`Hi. I'm ${this.name}`);
+  }
+}
+
+user.sayHi(1, 2, 3);
